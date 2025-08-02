@@ -19,7 +19,7 @@
               v-model="searchQuery"
               @keyup.enter="performSearch"
               type="text" 
-              placeholder="Search furniture..." 
+             placeholder="Cari furnitur..." 
               class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-300 focus:border-primary-500"
             >
             <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -33,7 +33,7 @@
         <!-- Navigation Links -->
         <div class="hidden md:flex items-center space-x-6">
           <router-link to="/products" class="text-gray-700 hover:text-primary-500 font-medium transition-colors">
-            Products
+            Produk
           </router-link>
           
           <!-- Wishlist -->
@@ -89,10 +89,10 @@
           <!-- Login/Register -->
           <div v-else class="flex items-center space-x-4">
             <router-link to="/login" class="text-gray-700 hover:text-primary-500 font-medium transition-colors">
-              Login
+              Masuk
             </router-link>
             <router-link to="/register" class="btn-primary">
-              Register
+              Daftar
             </router-link>
           </div>
         </div>
@@ -110,7 +110,7 @@
     <div v-if="showMobileMenu" class="md:hidden bg-white border-t border-gray-200">
       <div class="px-4 py-2 space-y-2">
         <router-link to="/products" class="block py-2 text-gray-700 hover:text-primary-500 transition-colors" @click="showMobileMenu = false">
-          Products
+          Produk
         </router-link>
         <router-link to="/wishlist" class="block py-2 text-gray-700 hover:text-primary-500 transition-colors" @click="showMobileMenu = false">
           Wishlist
@@ -132,10 +132,10 @@
         </div>
         <div v-else class="pt-2 border-t border-gray-200">
           <router-link to="/login" class="block py-2 text-gray-700 hover:text-primary-500 transition-colors" @click="showMobileMenu = false">
-            Login
+            Masuk
           </router-link>
           <router-link to="/register" class="block py-2 text-gray-700 hover:text-primary-500 transition-colors" @click="showMobileMenu = false">
-            Register
+            Daftar
           </router-link>
         </div>
       </div>

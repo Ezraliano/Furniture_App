@@ -20,12 +20,12 @@
 
       <!-- Sale badge -->
       <div v-if="product.originalPrice > product.price" class="absolute top-3 left-3 bg-red-500 text-white px-2 py-1 rounded-md text-sm font-medium">
-        Sale
+        Diskon
       </div>
 
       <!-- Out of stock overlay -->
       <div v-if="!product.inStock" class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <span class="text-white font-semibold text-lg">Out of Stock</span>
+        <span class="text-white font-semibold text-lg">Stok Habis</span>
       </div>
     </div>
 
@@ -53,9 +53,9 @@
       <!-- Price -->
       <div class="flex items-center justify-between mb-4">
         <div class="flex items-center space-x-2">
-          <span class="text-2xl font-bold text-primary-500">${{ product.price.toFixed(2) }}</span>
+          <span class="text-2xl font-bold text-primary-500">Rp {{ formatPrice(product.price) }}</span>
           <span v-if="product.originalPrice > product.price" class="text-sm text-gray-500 line-through">
-            ${{ product.originalPrice.toFixed(2) }}
+            Rp {{ formatPrice(product.originalPrice) }}
           </span>
         </div>
       </div>
@@ -70,13 +70,13 @@
           <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.1 5M7 13v6a1 1 0 001 1h9a1 1 0 001-1v-6M9 19v-6"/>
           </svg>
-          Add to Cart
+          Tambah ke Keranjang
         </button>
         <router-link 
           :to="`/products/${product.id}`"
           class="btn-outline text-center"
         >
-          View
+          Lihat
         </router-link>
       </div>
     </div>
@@ -104,6 +104,9 @@ const addToCart = () => {
   cartStore.addItem(props.product)
 }
 
+const formatPrice = (price) => {
+  return new Intl.NumberFormat('id-ID').format(price)
+}
 const toggleWishlist = () => {
   wishlistStore.toggleItem(props.product)
 }

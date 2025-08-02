@@ -4,27 +4,27 @@ import { ref, computed } from 'vue'
 export const useProductsStore = defineStore('products', () => {
   const products = ref([])
   const categories = ref([
-    { id: 1, name: 'Living Room', slug: 'living-room' },
-    { id: 2, name: 'Bedroom', slug: 'bedroom' },
-    { id: 3, name: 'Dining Room', slug: 'dining-room' },
-    { id: 4, name: 'Office', slug: 'office' },
+    { id: 1, name: 'Ruang Tamu', slug: 'living-room' },
+    { id: 2, name: 'Kamar Tidur', slug: 'bedroom' },
+    { id: 3, name: 'Ruang Makan', slug: 'dining-room' },
+    { id: 4, name: 'Kantor', slug: 'office' },
     { id: 5, name: 'Outdoor', slug: 'outdoor' },
-    { id: 6, name: 'Storage', slug: 'storage' }
+    { id: 6, name: 'Penyimpanan', slug: 'storage' }
   ])
   const isLoading = ref(false)
   const searchQuery = ref('')
   const selectedCategory = ref('')
-  const priceRange = ref([0, 5000])
+  const priceRange = ref([0, 50000000])
   const sortBy = ref('name')
 
   // Mock products data
   const mockProducts = [
     {
       id: 1,
-      name: 'Modern Sectional Sofa',
-      description: 'Comfortable and stylish sectional sofa perfect for modern living rooms.',
-      price: 1299.99,
-      originalPrice: 1599.99,
+      name: 'Sofa Sectional Modern',
+      description: 'Sofa sectional yang nyaman dan bergaya, sempurna untuk ruang tamu modern.',
+      price: 19499900,
+      originalPrice: 23999900,
       category: 'living-room',
       images: [
         'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -35,17 +35,17 @@ export const useProductsStore = defineStore('products', () => {
       rating: 4.5,
       reviewCount: 89,
       seller: { id: 1, name: 'Furniture Plus', rating: 4.8 },
-      tags: ['modern', 'comfortable', 'sectional'],
-      dimensions: '108" W x 36" D x 32" H',
-      material: 'Fabric upholstery, hardwood frame',
+      tags: ['modern', 'nyaman', 'sectional'],
+      dimensions: '274cm L x 91cm D x 81cm T',
+      material: 'Pelapis kain, rangka kayu keras',
       createdAt: new Date('2024-01-15').toISOString()
     },
     {
       id: 2,
-      name: 'Rustic Dining Table',
-      description: 'Handcrafted rustic dining table made from reclaimed wood.',
-      price: 899.99,
-      originalPrice: 999.99,
+      name: 'Meja Makan Rustic',
+      description: 'Meja makan rustic buatan tangan dari kayu daur ulang.',
+      price: 13499900,
+      originalPrice: 14999900,
       category: 'dining-room',
       images: [
         'https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -56,17 +56,17 @@ export const useProductsStore = defineStore('products', () => {
       rating: 4.7,
       reviewCount: 56,
       seller: { id: 2, name: 'Rustic Woods', rating: 4.9 },
-      tags: ['rustic', 'handcrafted', 'reclaimed'],
-      dimensions: '72" W x 36" D x 30" H',
-      material: 'Reclaimed oak wood',
+      tags: ['rustic', 'buatan-tangan', 'daur-ulang'],
+      dimensions: '183cm L x 91cm D x 76cm T',
+      material: 'Kayu oak daur ulang',
       createdAt: new Date('2024-01-10').toISOString()
     },
     {
       id: 3,
-      name: 'Ergonomic Office Chair',
-      description: 'Professional ergonomic office chair with lumbar support.',
-      price: 449.99,
-      originalPrice: 549.99,
+      name: 'Kursi Kantor Ergonomis',
+      description: 'Kursi kantor ergonomis profesional dengan penyangga punggung.',
+      price: 6749900,
+      originalPrice: 8249900,
       category: 'office',
       images: [
         'https://images.pexels.com/photos/541518/pexels-photo-541518.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -77,17 +77,17 @@ export const useProductsStore = defineStore('products', () => {
       rating: 4.3,
       reviewCount: 134,
       seller: { id: 3, name: 'Office Solutions', rating: 4.6 },
-      tags: ['ergonomic', 'office', 'adjustable'],
-      dimensions: '26" W x 26" D x 40-44" H',
-      material: 'Mesh back, fabric seat, aluminum base',
+      tags: ['ergonomis', 'kantor', 'dapat-disesuaikan'],
+      dimensions: '66cm L x 66cm D x 102-112cm T',
+      material: 'Punggung mesh, dudukan kain, dasar aluminium',
       createdAt: new Date('2024-01-20').toISOString()
     },
     {
       id: 4,
-      name: 'Luxury King Bed Frame',
-      description: 'Elegant upholstered king bed frame with tufted headboard.',
-      price: 1799.99,
-      originalPrice: 2199.99,
+      name: 'Rangka Tempat Tidur King Mewah',
+      description: 'Rangka tempat tidur king berlapis elegan dengan kepala tempat tidur berlapis.',
+      price: 26999900,
+      originalPrice: 32999900,
       category: 'bedroom',
       images: [
         'https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -98,17 +98,17 @@ export const useProductsStore = defineStore('products', () => {
       rating: 4.8,
       reviewCount: 78,
       seller: { id: 4, name: 'Bedroom Luxe', rating: 4.9 },
-      tags: ['luxury', 'upholstered', 'king'],
-      dimensions: '80" W x 84" D x 54" H',
-      material: 'Velvet upholstery, solid wood frame',
+      tags: ['mewah', 'berlapis', 'king'],
+      dimensions: '203cm L x 213cm D x 137cm T',
+      material: 'Pelapis beludru, rangka kayu solid',
       createdAt: new Date('2024-01-08').toISOString()
     },
     {
       id: 5,
-      name: 'Outdoor Patio Set',
-      description: 'Weather-resistant patio dining set for outdoor entertaining.',
-      price: 699.99,
-      originalPrice: 899.99,
+      name: 'Set Patio Outdoor',
+      description: 'Set makan patio tahan cuaca untuk hiburan luar ruangan.',
+      price: 10499900,
+      originalPrice: 13499900,
       category: 'outdoor',
       images: [
         'https://images.pexels.com/photos/1456706/pexels-photo-1456706.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -119,17 +119,17 @@ export const useProductsStore = defineStore('products', () => {
       rating: 4.4,
       reviewCount: 92,
       seller: { id: 5, name: 'Outdoor Living', rating: 4.7 },
-      tags: ['outdoor', 'weather-resistant', 'dining'],
-      dimensions: 'Table: 60" W x 38" D x 29" H',
-      material: 'Aluminum frame, weather-resistant fabric',
+      tags: ['outdoor', 'tahan-cuaca', 'makan'],
+      dimensions: 'Meja: 152cm L x 97cm D x 74cm T',
+      material: 'Rangka aluminium, kain tahan cuaca',
       createdAt: new Date('2024-01-12').toISOString()
     },
     {
       id: 6,
-      name: 'Storage Ottoman',
-      description: 'Multi-functional storage ottoman with removable lid.',
-      price: 199.99,
-      originalPrice: 249.99,
+      name: 'Ottoman Penyimpanan',
+      description: 'Ottoman penyimpanan multifungsi dengan tutup yang dapat dilepas.',
+      price: 2999900,
+      originalPrice: 3749900,
       category: 'storage',
       images: [
         'https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -140,9 +140,9 @@ export const useProductsStore = defineStore('products', () => {
       rating: 4.2,
       reviewCount: 145,
       seller: { id: 6, name: 'Smart Storage', rating: 4.5 },
-      tags: ['storage', 'ottoman', 'multi-functional'],
-      dimensions: '24" W x 16" D x 18" H',
-      material: 'Faux leather, MDF frame',
+      tags: ['penyimpanan', 'ottoman', 'multifungsi'],
+      dimensions: '61cm L x 41cm D x 46cm T',
+      material: 'Kulit sintetis, rangka MDF',
       createdAt: new Date('2024-01-18').toISOString()
     }
   ]

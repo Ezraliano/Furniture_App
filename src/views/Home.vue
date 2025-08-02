@@ -6,33 +6,33 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div class="space-y-6">
             <h1 class="text-5xl font-bold text-gray-900 leading-tight">
-              Transform Your Space with 
-              <span class="text-primary-500">Premium Furniture</span>
+              Ubah Ruang Anda dengan 
+              <span class="text-primary-500">Furnitur Premium</span>
             </h1>
             <p class="text-xl text-gray-600 leading-relaxed">
-              Discover unique, high-quality furniture from trusted sellers. Create your perfect home 
-              with pieces that reflect your style and personality.
+              Temukan furnitur unik berkualitas tinggi dari penjual terpercaya. Ciptakan rumah impian Anda 
+              dengan perabotan yang mencerminkan gaya dan kepribadian Anda.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
               <router-link to="/products" class="btn-primary text-center">
-                Shop Now
+                Belanja Sekarang
               </router-link>
               <router-link to="/register" class="btn-outline text-center">
-                Start Selling
+                Mulai Berjualan
               </router-link>
             </div>
             <div class="flex items-center space-x-8 pt-4">
               <div class="text-center">
                 <div class="text-2xl font-bold text-primary-500">10K+</div>
-                <div class="text-sm text-gray-600">Happy Customers</div>
+                <div class="text-sm text-gray-600">Pelanggan Puas</div>
               </div>
               <div class="text-center">
                 <div class="text-2xl font-bold text-primary-500">500+</div>
-                <div class="text-sm text-gray-600">Trusted Sellers</div>
+                <div class="text-sm text-gray-600">Penjual Terpercaya</div>
               </div>
               <div class="text-center">
                 <div class="text-2xl font-bold text-primary-500">50K+</div>
-                <div class="text-sm text-gray-600">Products</div>
+                <div class="text-sm text-gray-600">Produk</div>
               </div>
             </div>
           </div>
@@ -50,8 +50,8 @@
                   </svg>
                 </div>
                 <div>
-                  <div class="font-semibold text-gray-900">Quality Guaranteed</div>
-                  <div class="text-sm text-gray-600">30-day return policy</div>
+                  <div class="font-semibold text-gray-900">Kualitas Terjamin</div>
+                  <div class="text-sm text-gray-600">Kebijakan pengembalian 30 hari</div>
                 </div>
               </div>
             </div>
@@ -64,9 +64,9 @@
     <section class="py-16 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Shop by Category</h2>
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Belanja Berdasarkan Kategori</h2>
           <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-            Explore our carefully curated collections designed for every room in your home
+            Jelajahi koleksi pilihan kami yang dirancang untuk setiap ruangan di rumah Anda
           </p>
         </div>
         
@@ -93,9 +93,9 @@
     <section class="py-16 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Featured Products</h2>
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Produk Unggulan</h2>
           <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-            Discover our top-rated furniture pieces loved by customers
+            Temukan perabotan terbaik kami yang disukai pelanggan
           </p>
         </div>
         
@@ -109,7 +109,7 @@
         
         <div class="text-center mt-12">
           <router-link to="/products" class="btn-primary">
-            View All Products
+            Lihat Semua Produk
           </router-link>
         </div>
       </div>
@@ -119,9 +119,9 @@
     <section class="py-16 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Why Choose FurniMarket?</h2>
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Mengapa Memilih FurniMarket?</h2>
           <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-            We're committed to providing you with the best furniture shopping experience
+            Kami berkomitmen memberikan pengalaman berbelanja furnitur terbaik untuk Anda
           </p>
         </div>
         
@@ -132,9 +132,9 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">Quality Assurance</h3>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Jaminan Kualitas</h3>
             <p class="text-gray-600">
-              Every piece is carefully vetted for quality and durability. We only work with trusted sellers.
+              Setiap produk telah diperiksa dengan teliti untuk kualitas dan daya tahan. Kami hanya bekerja dengan penjual terpercaya.
             </p>
           </div>
           
@@ -144,9 +144,9 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">Fast Delivery</h3>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Pengiriman Cepat</h3>
             <p class="text-gray-600">
-              Quick and reliable shipping to your doorstep. Most items delivered within 5-7 business days.
+              Pengiriman cepat dan terpercaya ke depan pintu Anda. Sebagian besar barang dikirim dalam 5-7 hari kerja.
             </p>
           </div>
           
@@ -156,9 +156,9 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
               </svg>
             </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">Customer Support</h3>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Dukungan Pelanggan</h3>
             <p class="text-gray-600">
-              Our dedicated support team is here to help you every step of the way, from selection to delivery.
+              Tim dukungan khusus kami siap membantu Anda di setiap langkah, dari pemilihan hingga pengiriman.
             </p>
           </div>
         </div>
@@ -168,18 +168,18 @@
     <!-- Newsletter Signup -->
     <section class="py-16 bg-primary-500">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-bold text-white mb-4">Stay Updated</h2>
+        <h2 class="text-3xl font-bold text-white mb-4">Tetap Terhubung</h2>
         <p class="text-primary-100 text-lg mb-8 max-w-2xl mx-auto">
-          Subscribe to our newsletter for the latest furniture trends, exclusive deals, and design inspiration
+          Berlangganan newsletter kami untuk tren furnitur terbaru, penawaran eksklusif, dan inspirasi desain
         </p>
         <div class="max-w-md mx-auto flex">
           <input 
             type="email" 
-            placeholder="Enter your email" 
+            placeholder="Masukkan email Anda" 
             class="flex-1 px-4 py-3 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-primary-300"
           >
           <button class="px-6 py-3 bg-secondary-500 text-white rounded-r-lg hover:bg-secondary-600 transition-colors">
-            Subscribe
+            Berlangganan
           </button>
         </div>
       </div>

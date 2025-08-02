@@ -13,8 +13,8 @@
             <span class="text-xl font-bold text-primary-400">FurniMarket</span>
           </div>
           <p class="text-gray-300 mb-4 max-w-md">
-            Your trusted marketplace for quality furniture. Discover unique pieces from verified sellers 
-            and transform your space with style and comfort.
+            Marketplace terpercaya Anda untuk furnitur berkualitas. Temukan produk unik dari penjual terverifikasi 
+            dan ubah ruang Anda dengan gaya dan kenyamanan.
           </p>
           <div class="flex space-x-4">
             <a href="#" class="text-gray-400 hover:text-white transition-colors">
@@ -42,27 +42,27 @@
 
         <!-- Quick Links -->
         <div>
-          <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+          <h3 class="text-lg font-semibold mb-4">Tautan Cepat</h3>
           <ul class="space-y-2">
-            <li><router-link to="/products" class="text-gray-300 hover:text-white transition-colors">All Products</router-link></li>
-            <li><router-link to="/products?category=living-room" class="text-gray-300 hover:text-white transition-colors">Living Room</router-link></li>
-            <li><router-link to="/products?category=bedroom" class="text-gray-300 hover:text-white transition-colors">Bedroom</router-link></li>
-            <li><router-link to="/products?category=dining-room" class="text-gray-300 hover:text-white transition-colors">Dining Room</router-link></li>
-            <li><router-link to="/products?category=office" class="text-gray-300 hover:text-white transition-colors">Office</router-link></li>
+            <li><router-link to="/products" class="text-gray-300 hover:text-white transition-colors">Semua Produk</router-link></li>
+            <li><router-link to="/products?category=living-room" class="text-gray-300 hover:text-white transition-colors">Ruang Tamu</router-link></li>
+            <li><router-link to="/products?category=bedroom" class="text-gray-300 hover:text-white transition-colors">Kamar Tidur</router-link></li>
+            <li><router-link to="/products?category=dining-room" class="text-gray-300 hover:text-white transition-colors">Ruang Makan</router-link></li>
+            <li><router-link to="/products?category=office" class="text-gray-300 hover:text-white transition-colors">Kantor</router-link></li>
             <li><router-link to="/products?category=outdoor" class="text-gray-300 hover:text-white transition-colors">Outdoor</router-link></li>
           </ul>
         </div>
 
         <!-- Customer Service -->
         <div>
-          <h3 class="text-lg font-semibold mb-4">Customer Service</h3>
+          <h3 class="text-lg font-semibold mb-4">Layanan Pelanggan</h3>
           <ul class="space-y-2">
-            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Help Center</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Shipping Info</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Returns</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Size Guide</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Care Instructions</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Pusat Bantuan</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Info Pengiriman</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Pengembalian</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Hubungi Kami</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Panduan Ukuran</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Petunjuk Perawatan</a></li>
           </ul>
         </div>
       </div>
@@ -73,9 +73,9 @@
           © 2024 FurniMarket. All rights reserved.
         </p>
         <div class="flex space-x-6 mt-4 sm:mt-0">
-          <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
-          <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
-          <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</a>
+          <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Kebijakan Privasi</a>
+          <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Syarat Layanan</a>
+          <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Kebijakan Cookie</a>
         </div>
       </div>
     </div>
