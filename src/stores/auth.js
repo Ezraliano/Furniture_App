@@ -7,7 +7,6 @@ export const useAuthStore = defineStore('auth', () => {
 
   const isAuthenticated = computed(() => !!user.value)
   const isAdmin = computed(() => user.value?.role === 'admin')
-  const isSeller = computed(() => user.value?.role === 'seller')
   const isCustomer = computed(() => user.value?.role === 'customer')
 
   const login = async (credentials) => {
@@ -19,11 +18,9 @@ export const useAuthStore = defineStore('auth', () => {
       // Mock user data
       user.value = {
         id: 1,
-        name: credentials.email === 'admin@furniture.com' ? 'Admin User' : 
-               credentials.email === 'seller@furniture.com' ? 'Seller User' : 'John Doe',
+        name: credentials.email === 'admin@furniture.com' ? 'Admin User' : 'John Doe',
         email: credentials.email,
-        role: credentials.email === 'admin@furniture.com' ? 'admin' : 
-              credentials.email === 'seller@furniture.com' ? 'seller' : 'customer',
+        role: credentials.email === 'admin@furniture.com' ? 'admin' : 'customer',
         avatar: 'https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
         createdAt: new Date().toISOString()
       }
@@ -91,7 +88,6 @@ export const useAuthStore = defineStore('auth', () => {
     isLoading,
     isAuthenticated,
     isAdmin,
-    isSeller,
     isCustomer,
     login,
     register,

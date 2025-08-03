@@ -12,7 +12,6 @@ import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import Profile from '../views/Profile.vue'
 import Dashboard from '../views/Dashboard.vue'
-import SellerDashboard from '../views/SellerDashboard.vue'
 import AdminDashboard from '../views/AdminDashboard.vue'
 
 const routes = [
@@ -74,12 +73,6 @@ const routes = [
     meta: { requiresAuth: true }
   },
   {
-    path: '/seller',
-    name: 'SellerDashboard',
-    component: SellerDashboard,
-    meta: { requiresAuth: true, requiresSeller: true }
-  },
-  {
     path: '/admin',
     name: 'AdminDashboard',
     component: AdminDashboard,
@@ -106,8 +99,6 @@ router.beforeEach((to, from, next) => {
   } else if (to.meta.guest && authStore.isAuthenticated) {
     next('/dashboard')
   } else if (to.meta.requiresAdmin && !authStore.isAdmin) {
-    next('/dashboard')
-  } else if (to.meta.requiresSeller && !authStore.isSeller) {
     next('/dashboard')
   } else {
     next()

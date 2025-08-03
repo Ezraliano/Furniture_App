@@ -98,22 +98,6 @@
             </div>
           </div>
 
-          <div>
-            <label for="role" class="block text-sm font-medium text-gray-700">
-              Account type
-            </label>
-            <div class="mt-1">
-              <select
-                id="role"
-                v-model="form.role"
-                name="role"
-                class="input-field"
-              >
-                <option value="customer">Customer</option>
-                <option value="seller">Seller</option>
-              </select>
-            </div>
-          </div>
 
           <div class="flex items-center">
             <input
@@ -161,7 +145,6 @@ const form = reactive({
   email: '',
   password: '',
   confirmPassword: '',
-  role: 'customer',
   agreeTerms: false
 })
 
@@ -200,8 +183,7 @@ const handleRegister = async () => {
   const result = await authStore.register({
     name: form.name,
     email: form.email,
-    password: form.password,
-    role: form.role
+    password: form.password
   })
 
   if (result.success) {

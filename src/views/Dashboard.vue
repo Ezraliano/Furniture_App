@@ -145,16 +145,6 @@
       </div>
 
       <!-- Role-specific actions -->
-      <div v-if="authStore.isSeller" class="mt-8">
-        <div class="bg-gradient-to-r from-primary-500 to-secondary-500 rounded-xl p-6 text-white">
-          <h3 class="text-xl font-semibold mb-2">Seller Dashboard</h3>
-          <p class="mb-4">Manage your products and track your sales performance</p>
-          <router-link to="/seller" class="bg-white text-primary-500 px-6 py-2 rounded-lg font-medium hover:bg-gray-100 transition-colors">
-            Go to Seller Dashboard
-          </router-link>
-        </div>
-      </div>
-
       <div v-if="authStore.isAdmin" class="mt-8">
         <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-xl p-6 text-white">
           <h3 class="text-xl font-semibold mb-2">Admin Dashboard</h3>

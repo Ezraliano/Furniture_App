@@ -73,9 +73,6 @@
               <router-link to="/dashboard" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors" @click="showUserMenu = false">
                 Dashboard
               </router-link>
-              <router-link v-if="authStore.isSeller" to="/seller" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors" @click="showUserMenu = false">
-                Seller Dashboard
-              </router-link>
               <router-link v-if="authStore.isAdmin" to="/admin" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors" @click="showUserMenu = false">
                 Admin Dashboard
               </router-link>

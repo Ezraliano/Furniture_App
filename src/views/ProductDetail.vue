@@ -152,10 +152,6 @@
                   <dt class="text-gray-600">Material:</dt>
                   <dd class="text-gray-900">{{ product.material }}</dd>
                 </div>
-                <div class="flex justify-between">
-                  <dt class="text-gray-600">Seller:</dt>
-                  <dd class="text-gray-900">{{ product.seller.name }}</dd>
-                </div>
               </dl>
             </div>
           </div>
